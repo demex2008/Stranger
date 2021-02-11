@@ -1,1 +1,1 @@
-# Strange-Repository
+# Stranger-Repository
