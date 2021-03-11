@@ -186,6 +186,140 @@ Created by HSK-DE
 	</extension>
 </addon>
 
+<addon id="plugin.program.openwizard" name="[COLOR limegreen]Open[/COLOR]Wizard" version="1.4.7.1" provider-name="drinfernoo">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+        <import addon="script.speedtester" optional="true" version="1.1.2" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR limegreen]Open[/COLOR]Wizard</summary>
+        <description lang="en">[COLOR limegreen]Open[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/drinfernoo/plugin.program.openwizard/</source>
+        <news>
+1.4.7
+ - Don't show Matrix builds in previous versions
+1.4.6
+ - Use Speed Tester add-on from official repo
+1.4.5
+ - Fix bugs with unintended files being cleared
+1.4.4
+ - Transfer ownership
+1.4.3
+ - Fix missing artwork on items (thanks @xulek)
+1.4.2
+ - A few bug fixes
+1.4.1
+ - Fix crash on fresh installs
+1.4.0
+ - Fix APK Installer
+ - Convert official APK downloader to use official script
+ - Add scrollbar to Save Data dialog
+ - Fix skin path in build info
+1.3.7
+ - Fix import lock error
+1.3.6
+ - Fix notifications
+ - Cleanup log files
+1.3.5
+ - Add Fen
+ - Add Shadow
+ - Fix restoring saved data every boot
+1.3.4
+ - Fix bad indent
+1.3.3
+ - Fix Unicode characters in notification window
+1.3.2
+ - Fix build restore
+1.3.1
+ - Fix "Keep Login Info" menu
+1.3.0
+ - Fix formatting of saved restore times
+ - Fix local build zip being deleted on restore
+ - Add YouTube API saving
+ - Remove broken context menus
+ - Fix repeating dialogs from shortcuts/favorites
+ - Remove "Normal Install" option
+ - Add "Logging Tools" menu
+ - Add option to save guisettings.xml
+ - Add TMDbHelper Fanart.tv saving
+ - More fixes for OS X
+ - Fix Seren Fanart.tv saving
+1.2.9
+ - Fix NuMb3r5 cache clearing
+ - Fix hang during repo force check
+ - Fix logins being restored every startup
+ - Fix some file permission errors
+ - Fix OS X backup errors
+1.2.8
+ - Add Gaia PM OAuth
+ - Fix binary add-on restoration
+ - Fix some issues with old settings
+ - Fix timing on many startup tasks
+1.2.7
+ - Add TheMovieDb Helper
+1.2.6
+ - Fix Seren PM OAuth
+1.2.5
+ - Fix typo in debridit.py
+1.2.4
+ - Cover more edge cases during binary detection
+1.2.3
+ - Fix notification ID bug
+1.2.2
+ - Add Seren PM OAuth
+ - Add AllDebrid spport for Gaia, Seren, ResolveURL, and URLResolver
+1.2.1
+ - General bug fixes
+1.2.0
+ - Silence save data notifications on startup
+ - Fix Addon Installer menu
+ - Convert addons.txt to JSON format
+1.1.1
+ - Fix error on advancedsettings categories
+1.1.0
+ - Add back advancedsettings area under System Tweaks/Fixes
+ - Rudimentary version of advancedsettings editor. Can currently only handle editing pre-existing tags under 'cache' and 'network'.
+ - Convert advanced.txt to JSON format
+ - Add "built-in" advancedsettings.xml presets
+1.0.3
+ - Update artwork
+ - Fix rare issues with URLs not working
+ - Fix repetitive build prompt (again)
+ - Fix builds downloading twice
+ - Fix title coloring on notifications
+ - Fix auto repo install
+ - Fix first run settings not being respected
+1.0.2
+ - Fix crash in login menu
+ - Fix auto install repo
+1.0.1
+ - Fix double startup
+ - Fix repetitive build prompt
+ - Fix main menu not opening on Krypton
+ - Fix notification timeout
+ - Fix crash in Trakt menu
+1.0.0
+ - Initial Commit
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.program.SimpleBuildWizard" name="Simple Builds" version="0.0.2" provider-name="Rohas">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -292,7 +426,7 @@ Scraped sources include: chaturbate, collectionsofbestporn, daftporn, drtuber, e
   </extension>
 </addon>
 
-<addon id="plugin.video.adulthideout" name="[COLOR lime]AdultHideout[/COLOR]" version="0.9.6" provider-name="Vashiel">
+<addon id="plugin.video.adulthideout" name="[COLOR lime]AdultHideout[/COLOR]" version="0.9.7" provider-name="Vashiel">
     <requires>
     </requires>
     <extension point="xbmc.python.pluginsource"
@@ -428,7 +562,7 @@ https://bumsfilme.com/</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.empflix" name="Empflix" version="2.1.0" provider-name="xbmc-adult">
+<addon id="plugin.video.empflix" name="[COLOR lime]Empflix[/COLOR]" version="2.1.0" provider-name="xbmc-adult">
     <requires>
         <!-- Commenting xbmc.python allows install on all versions of Kodi -->
         <!-- <import addon="xbmc.python" version="2.1.0"/> -->
@@ -446,23 +580,6 @@ https://bumsfilme.com/</description>
     <assets>
         <icon>icon.png</icon>
     </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.f4mTester" version="3.0.0" name="F4mTester" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.7.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-
-
-    <extension point="xbmc.addon.metadata">
-        <summary>f4mTester</summary>
-        <description></description>
-        <platform>all</platform>
     </extension>
 </addon>
 
@@ -491,10 +608,9 @@ https://bumsfilme.com/</description>
     </extension>
 </addon>
 
-<addon id="plugin.video.fapzone" name="[COLOR lime]FapZone[/COLOR]" version="3.00.001" provider-name="@Nemzzy">
+<addon id="plugin.video.fapzone" name="[COLOR lime]FapZone[/COLOR]" version="3.00.002" provider-name="@Nemzzy">
   <requires>
     <!-- <import addon="xbmc.python" version="2.1.0"/> -->
-    <import addon="script.module.addon.common" version="2.0.0" />
 	<import addon="script.module.beautifulsoup4" />
 	<import addon="script.module.html5lib" />
 	<import addon="script.module.requests" />
@@ -595,32 +711,6 @@ https://hdfilme.cc</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.jizzplanet" name="Jizz Planet" version="2.1.0" provider-name="Jizzplanet.com">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.pyxbmct" version="1.1.4" />
-		<import addon="script.module.resolveurl" version="5.0.00" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Jizz Planet</summary>
-		<description lang="en">Unofficial A-Z Adult Addon by Jizzplanet.com.</description>
-		<news>Version2</news>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
-		</assets>
-		<platform>all</platform>
-		<forum></forum>
-		<website></website>
-	</extension>
-</addon>
-
 <addon id="plugin.video.kinox.to"
 		name="[COLOR lime]KinoX[/COLOR]"
 		version="1.0.4"
@@ -691,147 +781,6 @@ https://www.kinox.to</description>
 		Die aktuellsten Änderungen findest du im Changelog oder Infos und Updates (whatsnew)
 		</news>
 	</extension>
-</addon>
-
-<addon id="plugin.video.live.streamspro"
-       name="LiveStreamsPro"
-       version="2.9.3"
-       provider-name="Shani">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.dateutil" optional="true" />
-    <import addon="script.module.resolveurl" optional="true"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.inputstreamhelper" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.livestreamer" optional="true"/>
-    <import addon="script.module.slproxy" optional="true"/>
-    <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-
-  <extension point="xbmc.addon.metadata">
-    <summary>livestreamspro- shamelessly forked from livestreams but added many things</summary>
-    <description>
-        In addition to what livestreams allowed you to do, you can now,
-        1. call regex in regex,
-        2. multiple regex in page, regex in session, also htmlunescape responses
-        3. create session from one regex and pass onto next in line
-        4. save sessions to a file and open again later
-        5. write python code in .py file, put in the profile directory and then call from your regex.
-        6. use epoctime, guid and unpack as functions already defined.
-        7. Use it to post values to the pages to get the proper responses
-        8. support many headers, like origin, X-Requested-With
-        9. you can now append cookies in response and then read in regex using includeheaders
-        10. You can now link to another web url via your xml using externallink
-        11. support for google captcha, now you can show and then post the text
-
-    </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.netflix" name="Netflix" version="1.12.2" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
-  <requires>
-    <import addon="xbmc.python" version="2.26.0"/>
-    <import addon="script.module.addon.signals" version="0.0.3"/>
-    <import addon="script.module.future" version="0.17.1"/>
-    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
-    <import addon="script.module.pycryptodome" version="3.4.3"/>
-    <import addon="script.module.requests" version="2.12.4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py"/>
-  <extension point="xbmc.python.module" library="packages/mysql-connector-python"/>
-  <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="cs_CZ">Netflix</summary>
-    <description lang="cs_CZ">Plugin pro sledování filmů, seriálů online z Netflixu</description>
-    <disclaimer lang="cs_CZ">Použití tohoto doplňku nemusí být ve vaší zemi pobytu legální - před instalací dbejte na vaše zákony.</disclaimer>
-    <summary lang="de_DE">Netflix</summary>
-    <description lang="de_DE">Addon für Netflix VOD-Dienste</description>
-    <disclaimer lang="de_DE">Möglicherweise ist die Verwendung dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation überprüfen.</disclaimer>
-    <summary lang="en_GB">Netflix</summary>
-    <description lang="en_GB">Netflix VOD Services Add-on</description>
-    <disclaimer lang="en_GB">The use of this add-on may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
-    <summary lang="el_GR">Νέτφλιξ</summary>
-    <description lang="el_GR">Πρόσθετο υπηρεσιών κατά παραγγελία του Νέτφλιξ</description>
-    <disclaimer lang="el_GR">Η χρήση αυτού του προσθέτου μπορεί να μην είναι νόμιμη στην χώρα που κατοικείτε - παρακαλώ ελέγξτε τους τοπικούς νόμους πριν την εγκατάσταση.</disclaimer>
-    <summary lang="nl_NL">Netflix</summary>
-    <description lang="nl_NL">Bekijk Netflix films en tvprogramma's in Kodi.</description>
-    <disclaimer lang="nl_NL">Sommige delen van deze add-on zijn mogelijk onwettig in jouw land - raadpleeg de lokale wetgeving alvorens deze add-on te installeren.</disclaimer>
-    <summary lang="ja_JP">Netflix</summary>
-    <description lang="ja_JP">Netflix VOD サービスアドオン</description>
-    <disclaimer lang="ja_JP">一部の国では、このアドオンを使用するのが不法でありますので、設置する前に必ず関連法律を確認してください</disclaimer>
-    <summary lang="ko_KR">Netflix</summary>
-    <description lang="ko_KR">Netflix VOD 서비스애드온</description>
-    <disclaimer lang="ko_KR">일부 국가에서는 이 애드온을 사용하는 것이 불법일 수도 있으니, 설치하기전 관련 법을 확인하기 바랍니다.</disclaimer>
-    <description lang="it_IT">Netflix Add-on servizi VOD</description>
-    <disclaimer lang="it_IT">L'utilizzo di questo add-on potrebbe non essere legale nel vostro paese di residenza - si prega di verificare le leggi in vigore prima dell'installazione.</disclaimer>
-    <summary lang="es_ES">Netflix</summary>
-    <description lang="es_ES">Complemento para los Servicios VOD de Netflix</description>
-    <disclaimer lang="es_ES">El uso de este complemento puede no ser legal en su país de residencia - Por favor, consulte las leyes locales antes de instalarlo.</disclaimer>
-    <summary lang="hu_HU">Netflix</summary>
-    <description lang="hu_HU">Netflix VOD kiegészítő a Kodihoz</description>
-    <disclaimer lang="hu_HU">Előfordulhat, hogy a kiegészítő használata nem törvényes az Ön országában - telepítés előtt tájékozódjon a helyi törvényekről</disclaimer>
-    <summary lang="pt_BR">Netflix</summary>
-    <description lang="pt_BR">Add-on para os serviços VOD do Netflix</description>
-    <disclaimer lang="pt_BR">O uso deste addon pode não ser legal no seu país de residência - por favor, verifique as suas leis locais antes de instalar.</disclaimer>
-    <summary lang="tr_TR">Netflix</summary>
-    <description lang="tr_TR">Netflix VOD Hizmetleri Eklentisi</description>
-    <disclaimer lang="tr_TR">Bu eklentinin bazı bölümleri ikamet ettiğiniz ülkede yasal olmayabilir - lütfen yüklemeden önce yerel yasalarınıza bakın.</disclaimer>
-    <summary lang="ro_RO">Netflix</summary>
-    <description lang="ro_RO">Add-on pentru servicii video la cerere Netflix</description>
-    <disclaimer lang="ro_RO">Utilizarea acestui add-on ar putea fi ilegală în țara în care locuiți - vă rugăm să verificați legile locale înainte de instalare.</disclaimer>
-    <summary lang="sv_SE">Netflix</summary>
-    <description lang="sv_SE">Netflix VOD Service-tillägg</description>
-    <disclaimer lang="sv_SE">Användandet av detta tillägg kanske inte är lagligt i ditt hemland - kontrollera med dina lokala lagar innan du installerar.</disclaimer>
-    <summary lang="zh_CN">Netflix</summary>
-    <description lang="zh_CN">Netflix VOD服务附加组件</description>
-    <disclaimer lang="zh_CN">此附加组件在您的居住国可能不合法-请在安装前与您当地的法律核对。</disclaimer>
-    <summary lang="fr_FR">Netflix</summary>
-    <description lang="fr_FR">Extension Netflix SVoD</description>
-    <disclaimer lang="fr_FR">L'utilisation de cette extension n'est peut-être pas légale dans votre pays de résidence - renseignez-vous avant de l'installer</disclaimer>
-    <summary lang="pl_PL">Netflix</summary>
-    <description lang="pl_PL">Wtyczka dla usług VOD serwisu Netflix</description>
-    <disclaimer lang="pl_PL">Korzystanie z tego dodatku może być niezgodne z prawem w twoim kraju zamieszkania - przed zainstalowaniem zapoznaj się z lokalnymi przepisami.</disclaimer>
-    <summary lang="he_IL">Netflix</summary>
-    <description lang="he_IL">תוסף VOD לשירות של Netflix</description>
-    <disclaimer lang="he_IL">השימוש בתוסף זה עלול להיות לא חוקי במדינת מגוריך - אנא בדוק את החוק ברשות המקומית לפני ההתקנה</disclaimer>
-	<assets>
-      <icon>resources/media/icon.png</icon>
-      <fanart>resources/media/fanart.jpg</fanart>
-      <screenshot>resources/media/screenshot-01.jpg</screenshot>
-      <screenshot>resources/media/screenshot-02.jpg</screenshot>
-      <screenshot>resources/media/screenshot-03.jpg</screenshot>
-      <screenshot>resources/media/screenshot-04.jpg</screenshot>
-      <screenshot>resources/media/screenshot-05.jpg</screenshot>
-    </assets>
-    <language>en cs de es fr he hr hu it ja ko nl pl pt ro sv tr zh</language>
-    <platform>all</platform>
-    <license>MIT</license>
-    <website>https://www.netflix.com</website>
-    <email></email>
-    <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
-    <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
-    <news>
-v1.12.1 (2021-01-02)
-- Fixed an issue that not allow to use same profile to play videos with UpNext
-- Disabled UpNext when play STRM of a shared path (Wiki: Share STRM library with multiple devices - OPTION 2)
-    </news>
-  </extension>
 </addon>
 
 <addon id="plugin.video.pantyraiders" name="[COLOR lime]Panty Raiders[/COLOR]" version="2.2" provider-name="Jimmy Jones">
@@ -921,7 +870,7 @@ v1.12.1 (2021-01-02)
 
 <addon id="plugin.video.uwc"
        name="[COLOR lime]Ultimate Whitecream[/COLOR]"
-       version="1.2.43"
+       version="1.2.45"
        provider-name="Whitecream, holisticdioxide">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -945,8 +894,8 @@ v1.12.1 (2021-01-02)
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-        <news>[B]Version 1.2.43[/B]
-Removed Cumination dependency
+        <news>[B]Version 1.2.45[/B]
+Added keyword alphabetical sorting
 </news>
     </extension>
 </addon>
@@ -1046,7 +995,7 @@ https://xcine.tv</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.xstream" name="[COLOR lime]Xstream[/COLOR]" version="3.5.21~nightly" provider-name="xStream-Team">
+<addon id="plugin.video.xstream" name="[COLOR lime]Xstream[/COLOR]" version="3.5.21" provider-name="xStream-Team">
  <requires>
     <import addon="script.module.requests"/>
     <import addon="script.module.urlresolver"/>
@@ -1066,7 +1015,21 @@ https://xcine.tv</description>
    <license>GNU GPLv3</license>
    <platform>all</platform>
    <news>
-3.5.21~nightly
+3.5.21
+- [kinoger] fix protonvideo
+- [requestHandler] add json post
+- [filmpalast] filmmenu an seite angepasst
+- [view4u] entfernt offline
+- [dokus4] fix hosterauswahl list
+- [general] www von hostername entfernt
+- [flimmerstube] entfernt
+- [netzkino] fix hosterauswahl list
+- [general] TMDB-Handler bei mehr als 99 einträge deaktivieren
+- [kinoger] fix protonvideo
+- [alleserien] code optimiert
+- [kinoger] hoster optimiert
+- [kkiste] fix serien
+- [kinoger] add hoster start.u-stream
 - [pureanime] add hoster Flex, PureStream
    </news>
    <assets>
@@ -1097,17 +1060,21 @@ https://xcine.tv</description>
 
 <addon id="plugin.video.xxx-o-dus"
 	     name="[COLOR lime]XXX-O-DUS[/COLOR]"
-	     version="4.00.044"
-	     provider-name="Echo Coder">
+	     version="5.00.004"
+	     provider-name="Originally By : Echo Coder :: Revived By @Nemzzy668">
   <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
+    <!-- <import addon="xbmc.python" version="2.24.0"/> -->
     <import addon="script.module.echo"/>
     <import addon="script.xxxodus.artwork"/>
     <import addon="script.xxxodus.scrapers"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.urlresolver.xxx"/>
+    <import addon="script.module.resolveurl"/>
+    <import addon="script.module.resolveurl.xxx"/>
     <import addon="script.module.pyxbmct"/>
 	<import addon="script.module.requests" />
+	<import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.html5lib" />
+	<import addon="script.module.six" />
+	<import addon="script.module.kodi-six" />
     <!--<import addon="repository.colossus"/>-->
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -1117,7 +1084,7 @@ https://xcine.tv</description>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">[B]Massive Credit to @_PYDEV_ KingKong for the pyxbmct work to provide a stunning interface to view the dialogs in this addon and the GitHub issues! Also A huge credit to jokstergfx for the icons and fanarts in this addon and many others! Thank you![/B]</summary>
+    <summary lang="en">[B]Addon Originally Created By EchoCoder, Now Maintained by @Nemzzy668 :: Massive Credit to @_PYDEV_ KingKong for the pyxbmct work to provide a stunning interface to view the dialogs in this addon and the GitHub issues! Also A huge credit to jokstergfx for the icons and fanarts in this addon and many others! Thank you![/B]</summary>
     <description lang="en">[COLOR white]XXX-O-DUS scrapes many websites to bring you hundreds of thousands of videos. Features of the addon include, history monitoring, favourites, downloadable videos, parental controls and more![/COLOR]
 
 [COLOR white]Websites Include: Porn.com, PornHD.com, Chaturbate.com, RedTube.com, Xhamster.com, YouPorn.com, PornFun.com, Motherless.com,Porn00.org, Spankbang.com, Virtualpornstars.com, Watchxxxfree.com, Perfectgirls.net, XNXX.com and many more.[/COLOR]</description>
@@ -1154,7 +1121,7 @@ https://xcine.tv</description>
     </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.8.9" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.8.10" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -1168,11 +1135,8 @@ https://xcine.tv</description>
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
-[fix] my subscriptions section using YouTube RSS |contrib: PureHemp|
-[fix] items per page settings on Kodi 19
-[chg] recommendations only available for users with custom history playlist id configured
-[chg] no longer show watch later unless custom watch later playlist is configured
-[rem] remove usage of discontinued api and dual login (no longer required)
+[fix] fix javascript player retrieval and playback of some videos for affected users |contrib: thomazz-nl|
+    - Invalid URL &#39;http://&#39;: No host supplied
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -1251,7 +1215,7 @@ https://xcine.tv</description>
   </extension>
 </addon>
 
-<addon id="repository.adulthideout" name="AdultHideout REPO" version="1.0.1" provider-name="Vashiel">
+<addon id="repository.adulthideout" name="AdultHideout REPO" version="1.0.2" provider-name="Vashiel">
 	<extension point="xbmc.addon.repository" name="AdultHideout Addon Repository">
 		<info compressed="false">https://github.com/Vashiel/repository.adulthideout/raw/master/addons.xml</info>
 		<checksum>https://github.com/Vashiel/repository.adulthideout/raw/master/addons.xml.md5</checksum>
@@ -1265,7 +1229,7 @@ https://xcine.tv</description>
 </addon>
 
 <addon id="repository.aftermath" name="[B][COLOR dodgerblue]Aftermath[/COLOR][/B] Repository" version="1.4" provider-name="drinfernoo">
-	<extension point="xbmc.addon.repository" name="[B][COLOR dodgerblue]Aftermath[/COLOR][/B] Repository">
+	<extension point="xbmc.addon.repository" name="[COLOR dodgerblue]Aftermath[/COLOR] Repository">
 		<dir>
             <info compressed="false">https://raw.githubusercontent.com/drinfernoo/repository.aftermath/master/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/drinfernoo/repository.aftermath/master/zips/addons.xml.md5</checksum>
@@ -1411,11 +1375,20 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="repository.hsk_repo" name="[COLOR blue]HSK-DE Repository[/COLOR]" version="1.0.10" provider-name="Loki1979,HSK-DE Crew">
+<addon id="repository.hsk_repo" name="[COLOR blue]HSK-DE Repository[/COLOR]" version="1.0.21" provider-name="Loki1979,HSK-DE">
 	<extension point="xbmc.addon.repository" name="HSK-DE Repository">
-		<info compressed="false">https://downloads.guidos-skinbase.de/hsk_repo/addons.xml</info>
-		<checksum>https://downloads.guidos-skinbase.de/hsk_repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://downloads.guidos-skinbase.de/hsk_repo/</datadir>
+		<dir>
+		  <info compressed="false">https://downloads.guidos-skinbase.de/hsk_repo/addons.xml</info>
+		  <checksum>https://downloads.guidos-skinbase.de/hsk_repo/addons.xml.md5</checksum>
+		  <datadir zip="true">https://downloads.guidos-skinbase.de/hsk_repo/</datadir>
+		  <artdir>http://downloads.guidos-skinbase.de/hsk_repo/</artdir>
+		</dir>
+		<dir minversion="19.0.0">
+		  <info compressed="false">https://downloads.guidos-skinbase.de/hsk_crew_repo/addons.xml</info>
+		  <checksum>https://downloads.guidos-skinbase.de/hsk_crew_repo/addons.xml.md5</checksum>
+		  <datadir zip="true">https://downloads.guidos-skinbase.de/hsk_crew_repo/</datadir>
+		  <artdir>http://downloads.guidos-skinbase.de/hsk_crew_repo/</artdir>
+		</dir>
 	</extension>
     <extension point="xbmc.addon.metadata">
 	<summary></summary>
@@ -1436,24 +1409,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<clearlogo></clearlogo>
 		<screenshot></screenshot>
 	</assets>
-	</extension>
-</addon>
-
-<addon id="repository.jizzplanet" version="1.1.0" name="Jizz Planet repository" provider-name="Jizzplanet.com">
-	<extension point="xbmc.addon.repository" name="JizzPlanet Repository">
-            <dir>
-                <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-            </dir>
-		<info compressed="false">http://jizzplanet.com/repo/addons.xml</info>
-		<checksum>http://jizzplanet.com/repo/addons.xml.md5</checksum>
-		<datadir zip="true">http://jizzplanet.com/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">JizzPlanet Repository</summary>
-		<description lang="en">JizzPlanet Repository</description>
-		<platform>all</platform>
 	</extension>
 </addon>
 
@@ -1560,24 +1515,49 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<addon id="repository.kodiman_public" name="[COLOR lime]KODIMANS PUBLIC REPOSITORY[/COLOR]" version="2.0.5" provider-name="[COLOR lime]KODIMAN | HSK-DE[/COLOR]">
+<addon id="repository.kodiman_public" name="[COLOR lime]KODIMANS PUBLIC REPOSITORY[/COLOR]" version="2.0.8" provider-name="[COLOR lime]KODIMAN | HSK-DE[/COLOR]">
     <extension point="xbmc.addon.repository" name="KODIMANS PUBLIC REPOSITORY">
     <dir>
 		<info compressed="false">http://wizard.kodiman.net/repository/new_repo/addons.xml</info>
 		<checksum>http://wizard.kodiman.net/repository/new_repo/addons.xml.md5</checksum>
 		<datadir zip="true">http://wizard.kodiman.net/repository/new_repo/</datadir>
+		<artdir>http://wizard.kodiman.net/repository/new_repo/</artdir>
+	</dir>
+	<dir minversion="19.0.0">
+	    <info compressed="false">http://wizard.kodiman.net/repository19/new_repo/addons.xml</info>
+		<checksum>http://wizard.kodiman.net/repository19/new_repo/addons.xml.md5</checksum>
+		<datadir zip="true">http://wizard.kodiman.net/repository19/new_repo/</datadir>
+		<artdir>http://wizard.kodiman.net/repository19/new_repo/</artdir>
 	</dir>
     <dir>
 	    <info compressed="false">https://downloads.guidos-skinbase.de/hsk_repo/addons.xml</info>
 		<checksum>https://downloads.guidos-skinbase.de/hsk_repo/addons.xml.md5</checksum>
 		<datadir zip="true">https://downloads.guidos-skinbase.de/hsk_repo/</datadir>
 	</dir>
+	<dir minversion="19.0.0">
+	    <info compressed="false">https://downloads.guidos-skinbase.de/hsk_crew_repo/addons.xml</info>
+		<checksum>https://downloads.guidos-skinbase.de/hsk_crew_repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://downloads.guidos-skinbase.de/hsk_crew_repo/</datadir>
+		<artdir>http://downloads.guidos-skinbase.de/hsk_crew_repo/</artdir>
+	</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>[COLOR lime]KODIMANS PUBLIC REPOSITORY[/COLOR]</summary>
-        <description>Forum :
-https://www.kodiman.company/</description>
+        <description>Forum : https://www.kodiman.company/</description>
         <platform>all</platform>
+	<license></license>
+	<forum></forum>
+	<website></website>
+	<email></email>
+	<source></source>
+	<news></news>
+    <assets>
+		<icon>resources/icon.png</icon>
+		<fanart>resources/fanart.jpg</fanart>
+		<banner></banner>
+		<clearlogo></clearlogo>
+		<screenshot></screenshot>
+	</assets>
     </extension>
 </addon>
 
@@ -1623,12 +1603,17 @@ https://www.facebook.com/OpenKD</description>
     </extension>
 </addon>
 
-<addon id="repository.openwizard" name="[COLOR limegreen][B]Open[/B][/COLOR]Wizard Repository" version="1.2" provider-name="drinfernoo">
+<addon id="repository.openwizard" name="[COLOR limegreen][B]Open[/B][/COLOR]Wizard Repository" version="2.0" provider-name="drinfernoo">
     <extension point="xbmc.addon.repository" name="[COLOR limegreen][B]Open[/B][/COLOR]Wizard Repository">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/zips/</datadir>
+        <dir minversion="18.0" maxversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/leia/zips/</datadir>
+        </dir>
+        <dir minversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openwizard/master/matrix/zips/</datadir>
         </dir>
     </extension>
 
@@ -1645,7 +1630,7 @@ https://www.facebook.com/OpenKD</description>
     </extension>
 </addon>
 
-<addon id="repository.psyco" name="PsycoTV Repo" version="1.0.1" provider-name="Psyco">
+<addon id="repository.psyco" name="PsycoTV Repo" version="1.0.3" provider-name="Psyco">
 	<extension point="xbmc.addon.repository" name="Psyco">
 		<info compressed="false">http://psyco.tv/repo/addons.xml</info>
 		<checksum>http://psyco.tv/repo/addons.xml.md5</checksum>
@@ -1654,6 +1639,20 @@ https://www.facebook.com/OpenKD</description>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">PsycoTV Repository</summary>
 		<summary lang="de">Repository von Psyco</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.sandmann79.plugins" name="Sandmann79s Repository Leia" version="1.0.3" provider-name="Sandmann79">
+	<extension point="xbmc.addon.repository" name="Sandmann79s Repository Leia">
+		<info compressed="false">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Various Addons for Kodi 18 and below</summary>
 		<description></description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
@@ -1675,61 +1674,6 @@ https://www.facebook.com/OpenKD</description>
             <description>Some addons may contain Adult content YOU have been warned.</description>
             <platform>all</platform>
     </extension>
-</addon>
-
-<addon id="repository.scarecrow" name="[COLOR red]ScareCrow[/COLOR]" version="6.6.6" provider-name="scarecrow">
-	<extension point="xbmc.addon.repository" name="ScareCrow">
-	    <dir>
-		    <info compressed="false">http://mahousecm.com/scarecrow/addons.xml</info>
-		    <checksum>http://mahousecm.com/scarecrow/addons.xml.md5</checksum>
-		    <datadir zip="true">http://mahousecm.com/scarecrow/source/</datadir>
-		</dir>
-        <dir>
-		    <info compressed="false">http://mahousecm.com/night/zips/addons.xml</info>
-		    <checksum>http://mahousecm.com/night/zips/addons.xml.md5</checksum>
-		    <datadir zip="true">http://mahousecm.com/night/zips/</datadir>
-		</dir>
-		<dir>
-		    <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
-        </dir>
-		<dir>
-		    <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-		</dir>
-		<dir>
-		    <info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
-		    <checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
-		    <datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
-        </dir>
-		<dir minversion="15.0.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/isengard</datadir>
-		</dir>
-		<dir minversion="16.0.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/jarvis</datadir>
-		</dir>
-		<dir minversion="17.0.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/krypton</datadir>
-		</dir>
-		<dir minversion="17.9.0">
-			<info compressed="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia/addons.xml</info>
-			<checksum>https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/mikesilvo164/repo.aeon.nox.silvo/raw/master/leia</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>scarecrow</summary>
-		<description>scarecrow</description>
-		<platform>all</platform>
-	</extension>
 </addon>
 
 <addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.2">
@@ -1758,8 +1702,8 @@ https://www.facebook.com/OpenKD</description>
 	<extension point="xbmc.addon.repository" name="Stranger Repository">
 		<info compressed="true">https://raw.githubusercontent.com/demex2008/Stranger/master/zips/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/demex2008/Stranger/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/demex2008/Stranger/master/zips</datadir>
-		<artdir>https://github.com/demex2008/Stranger/master/zips</artdir>
+		<datadir zip="true">https://raw.githubusercontent.com/demex2008/Stranger/master/zips</datadir>
+		<artdir>https://raw.githubusercontent.com/demex2008/Stranger/master/zips</artdir>
 	</extension>
     <extension point="xbmc.addon.metadata">
 	<summary>[COLOR gold]Stranger[/COLOR] [COLOR red]Repository[/COLOR]
@@ -1785,7 +1729,7 @@ https://www.facebook.com/OpenKD</description>
 	</extension>
 </addon>
 
-<addon id="repository.StreamArmy" name="[COLOR crimson]S[COLOR silver]tream Army Repo 18 / 19 Compatible Addons[/COLOR]" version="13.0.002" provider-name="@Nemzzy668 / @_Manc_">
+<addon id="repository.StreamArmy" name="[COLOR crimson]S[COLOR silver]tream Army Repo 18 / 19 Compatible Addons[/COLOR]" version="13.0.005" provider-name="@Nemzzy668 / @_Manc_">
 	<extension point="xbmc.addon.repository" name="Stream Army">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/nemesis668/repository.streamarmy18-19/main/addons.xml</info>
@@ -1977,6 +1921,35 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	  </menu>
 	</extension>
  </addon>
+
+<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="2.6.9">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="default.py" point="xbmc.service" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Common caching api for xbmc plugins.</summary>
+  </extension>
+  <extension library="lib" point="xbmc.python.module" />
+</addon>
+
+<addon id="script.favourites" name="Favourites script" version="8.0.8" provider-name="ronie|`Black">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary>Favourites script</summary>
+		<description>Fetches item from your xbmc favourites to populate Home menu/submenu with custom buttons.</description>
+		<disclaimer>Needs skin support for it to be used properly</disclaimer>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=114671</forum>
+		<source>https://code.google.com/p/ronie/source/</source>
+	</extension>
+</addon>
 
 <addon id="script.kodi.loguploader" name="Kodi Logfile Uploader" version="0.6.0" provider-name="Team Kodi">
 	<requires>
@@ -2170,14 +2143,13 @@ v0.5.0 (2020-06-25)
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.23" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.25" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
@@ -2200,7 +2172,20 @@ v0.5.0 (2020-06-25)
     </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.8~nightly6" provider-name="Resolver Team">
+<addon id="script.module.resolveurl.xxx" version="2.1.11" name="Adult Resolver SMR Extension" provider-name="gujal">
+	<requires>
+		<!-- <import addon="xbmc.python" version="2.1.0"/> -->
+        <import addon="script.module.resolveurl" version="5.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="2021.03.09" provider-name="Resolver Team">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -2221,6 +2206,37 @@ v0.5.0 (2020-06-25)
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.urlresolver.xxx" version="1.0.09" name="Adult Resolver SMU Extension" provider-name="jsergio, Echo Coder">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+        	<import addon="script.module.urlresolver" version="3.0.38" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.tvaddons.debug.log" name="TVA Log Uploader" version="1.0.9" provider-name="tvaddons.co">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Upload Debug Logs to Shareable Location</summary>
+        <description lang="en">This add-on gives you the ability to upload your Kodi error logs to a shareable location, and can also optionally email you the link to your logs. Before you get started, be sure to Toggle ON the “Enable debug logging” function under the SYSTEM -> Settings -> System -> Logging menu within Kodi.</description>
+        <language></language>
+        <platform>all</platform>
+        <website>https://www.tvaddons.co/</website>
+        <source>https://github.com/tknorris/script.tvaddons.debug.log</source>
+        <forum>https://forums.tvaddons.co/maintenance-tool/</forum>
     </extension>
 </addon>
 
