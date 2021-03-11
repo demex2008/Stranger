@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.adulthideout" name="[COLOR lime]AdultHideout[/COLOR]" version="0.9.6" provider-name="Vashiel">
+<addon id="plugin.video.adulthideout" name="[COLOR lime]AdultHideout[/COLOR]" version="0.9.7" provider-name="Vashiel">
     <requires>
     </requires>
     <extension point="xbmc.python.pluginsource"
