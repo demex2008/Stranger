@@ -1,15 +1,14 @@
-Version 5.1.23 (January 29, 2021)
+Version 5.1.25 (February 20, 2021)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - vidcloud
-    - speedostream
+    - None
  
 - Resolvers Fixed/Updated:
-    - evoload
-    - streamz
-    - debridlink
+    - fembed
+    - tvlogy
+
 
 - Resolvers Removed
     - None

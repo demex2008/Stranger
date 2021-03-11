@@ -1,61 +1,47 @@
 Mit # markierte .py Dateien sind nur in unserem Resolver enthalten
 
-[B]5.1.8~nightly6[/B]
-  29.01.2021
+[B]2021.03.x~nightly1[/B]
+
+[B]2021-03-09~Release[/B]
   Update:
+- youtube
+- voesx
+
+  Neu:
+- lbry
+- cocoscope
+
+[B]6.1.8[/B]
+  22.02.2021
+  Update:
+- Versions Sprung auf 6.1.8 um Überschreiben durch TVAddons Repo zu verhindern
+- fembed
+- tvlogy
+- gofile
 - streamz (Datei gelöscht check)
 - debrid_link (Speichere dl client_id in den Einstellungen)
-
-[B]5.1.8~nightly5[/B]
-  20.01.2021
-  Update:
 - evoload
-
-[B]5.1.8~nightly4[/B]
-  19.01.2021
-  Update:
 - doodstream (Add Domain)
-
-  Neu:
-- vidcloud
-- speedostream
-
-[B]5.1.8~nightly3[/B]
-  16.01.2021
-  Update:
 - voesx
-- evoload (Update pattern)
 - videossh 
-  
-  Neu:
-- jetload 
-
-[B]5.1.8~nightly2[/B]
-  12.01.2021
-  Update:
 - Speedwatch 
 - mailru
+- streamtape (Update pattern)
+- net.py (Add json POST support )
 
   Neu:
+- megaupnet
+- vidcloud
+- speedostream
+- jetload 
 - abcvideo 
 - gamovideo 
 - videossh 
 - evoload 
+- k2s
 
   Entfernt:
 - vidup resolver
-
-
-[B]5.1.8~nightly1[/B]
-  07.01.2021
-  Update:
-- streamtape (Update pattern)
-- tvlogy (Update pattern)
-- net.py (Add json POST support )
-
-  Neu:
-- k2s
-
 
 [B]5.1.7[/B]
   03.01.2021
