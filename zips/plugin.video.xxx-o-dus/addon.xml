@@ -1,17 +1,21 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.xxx-o-dus" 
 	     name="[COLOR lime]XXX-O-DUS[/COLOR]" 
-	     version="4.00.044" 
-	     provider-name="Echo Coder">
+	     version="5.00.004" 
+	     provider-name="Originally By : Echo Coder :: Revived By @Nemzzy668">
   <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
+    <!-- <import addon="xbmc.python" version="2.24.0"/> -->
     <import addon="script.module.echo"/>
     <import addon="script.xxxodus.artwork"/>
     <import addon="script.xxxodus.scrapers"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="script.module.urlresolver.xxx"/>
+    <import addon="script.module.resolveurl"/>
+    <import addon="script.module.resolveurl.xxx"/>
     <import addon="script.module.pyxbmct"/>
 	<import addon="script.module.requests" />
+	<import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.html5lib" />
+	<import addon="script.module.six" />
+	<import addon="script.module.kodi-six" />
     <!--<import addon="repository.colossus"/>-->
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -21,7 +25,7 @@
   </extension> 
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">[B]Massive Credit to @_PYDEV_ KingKong for the pyxbmct work to provide a stunning interface to view the dialogs in this addon and the GitHub issues! Also A huge credit to jokstergfx for the icons and fanarts in this addon and many others! Thank you![/B]</summary>
+    <summary lang="en">[B]Addon Originally Created By EchoCoder, Now Maintained by @Nemzzy668 :: Massive Credit to @_PYDEV_ KingKong for the pyxbmct work to provide a stunning interface to view the dialogs in this addon and the GitHub issues! Also A huge credit to jokstergfx for the icons and fanarts in this addon and many others! Thank you![/B]</summary>
     <description lang="en">[COLOR white]XXX-O-DUS scrapes many websites to bring you hundreds of thousands of videos. Features of the addon include, history monitoring, favourites, downloadable videos, parental controls and more![/COLOR]
 
 [COLOR white]Websites Include: Porn.com, PornHD.com, Chaturbate.com, RedTube.com, Xhamster.com, YouPorn.com, PornFun.com, Motherless.com,Porn00.org, Spankbang.com, Virtualpornstars.com, Watchxxxfree.com, Perfectgirls.net, XNXX.com and many more.[/COLOR]</description>
