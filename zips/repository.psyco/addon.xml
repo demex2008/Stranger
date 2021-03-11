@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.psyco" name="PsycoTV Repo" version="1.0.1" provider-name="Psyco">
+<addon id="repository.psyco" name="PsycoTV Repo" version="1.0.3" provider-name="Psyco">
 	<extension point="xbmc.addon.repository" name="Psyco">
 		<info compressed="false">http://psyco.tv/repo/addons.xml</info>
 		<checksum>http://psyco.tv/repo/addons.xml.md5</checksum>
