@@ -2338,20 +2338,260 @@ v0.5.0 (2020-06-25)
 
 <addon id="skin.confluence18_hsk_ultimate_topics" version="4.2.25" name="[COLOR red]Confluence Ultimate Topics[/COLOR]  (18)" provider-name="SKINBASE">
 	<requires>
-		<import addon="xbmc.gui" version="5.14.0"/>
-		<import addon="script.favourites" version="7.00.0"/>
+	<import addon="xbmc.gui" version="5.14.0"/>
+	<import addon="script.favourites" version="7.00.0"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="1.0">
-		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+	<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Skins und Skin Themen by Guidos Skinbase.</summary>
-		<summary lang="en_GB">Skins and Skin Themen by Guidos Skinbase.</summary>
-		<description lang="de_DE">Guidos Skinbase Repo. Die Gröste Skinbase der Welt mit unzähligen Skin Mods  und Skin Themen aus der ganzen Welt. Ständig Erweitert und Verbessert, so sollte für jeden was dabei sein Viel Spass. </description>
-		<description lang="en_GB">Guido's Skinbase Repo. The world's largest skinbase with countless skin mods and skin themes from around the world. Constantly extended and improved, so there should be something for everyone Have fun.</description>
-		<platform>all</platform>
-		<news lang="de_DE">Guidos Skinbase Repo. Die Gröste Skinbase der Welt mit unzähligen Skin Mods  und Skin Themen aus der ganzen Welt. Ständig Erweitert und Verbessert, so sollte für jeden was dabei sein Viel Spass. </news>
-		<news lang="en_GB">Guido's Skinbase Repo. The world's largest skinbase with countless skin mods and skin themes from around the world. Constantly extended and improved, so there should be something for everyone Have fun.</news>
+	<summary lang="de_DE">Skins und Skin Themen by Guidos Skinbase.</summary>
+	<summary lang="en_GB">Skins and Skin Themen by Guidos Skinbase.</summary>
+	<description lang="de_DE">Guidos Skinbase Repo. Die Gröste Skinbase der Welt mit unzähligen Skin Mods  und Skin Themen aus der ganzen Welt. Ständig Erweitert und Verbessert, so sollte für jeden was dabei sein Viel Spass. </description>
+	<description lang="en_GB">Guido's Skinbase Repo. The world's largest skinbase with countless skin mods and skin themes from around the world. Constantly extended and improved, so there should be something for everyone Have fun.</description>
+	<platform>all</platform>
+	<news lang="de_DE">Guidos Skinbase Repo. Die Gröste Skinbase der Welt mit unzähligen Skin Mods  und Skin Themen aus der ganzen Welt. Ständig Erweitert und Verbessert, so sollte für jeden was dabei sein Viel Spass. </news>
+	<news lang="en_GB">Guido's Skinbase Repo. The world's largest skinbase with countless skin mods and skin themes from around the world. Constantly extended and improved, so there should be something for everyone Have fun.</news>
+	<assets>
+	<icon>resources/icon.png</icon>
+	<fanart>resources/fanart.jpg</fanart>
+	<screenshot>resources/screenshot001.jpg</screenshot>
+	<screenshot>resources/screenshot002.jpg</screenshot>
+	<screenshot>resources/screenshot003.jpg</screenshot>
+	<screenshot>resources/screenshot004.jpg</screenshot>
+	</assets>
+	</extension>
+</addon>
+	
+<addon id="plugin.program.hsk.simple.wizard" name="[COLOR blue]HSK-SIMPLE-WIZARD Kodi 18[/COLOR]" version="18.0.0" provider-name="[COLOR blue]Loki1979[/COLOR]">
+	<requires>
+	<import addon="xbmc.python" version="2.7.13" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="resources/pys/wizard.py">
+	<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	<summary>Einfach Schnell Simpel, HSK-SIMPEL-WIZARD !</summary>
+	<description>[COLOR blue]Created by Loki1979[/COLOR] [COLOR skyblue]20.02.2021 update python2+3[/COLOR]</description>
+	<disclaimer></disclaimer>
+	<language></language>
+	<platform>all</platform>
+	<license></license>
+	<forum></forum>
+	<website></website>
+	<email></email>
+	<source></source>
+	<news>Update 02.03.21</news>
+	<assets>
+	<icon>resources/icon.png</icon>
+	<fanart>resources/fanart.jpg</fanart>
+	<screenshot>resources/screenshot-01.jpg</screenshot>
+	<screenshot>resources/screenshot-02.jpg</screenshot>
+	<screenshot>resources/screenshot-03.jpg</screenshot>
+	</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.video.ddl.me"  name="[COLOR blue]DDL.ME[/COLOR]" version="1.0.9" provider-name="[COLOR blue]Loki1979[/COLOR]">
+    <requires>
+    <import addon="xbmc.python" version="2.7.13" />
+    <import addon="script.module.hsk.de"/>
+    <!-- choose your resolver -->
+
+    <!-- <import addon="script.module.resolveurl"/> -->
+    <import addon="script.module.urlresolver"/>
+
+     <!-- choose your resolver -->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+    <summary>[COLOR blue]DDL.ME[/COLOR]</summary>
+    <description>
+Release date 29.10.2018 - 16:00
+Kodi version 17.0 +
+Python version 2.7.11 +
+
+URL-Resolver in xml selectable:
+script.module.resolveurl
+or
+script.module.urlresolver
+
+Created by HSK-DE
+</description>
+    <disclaimer></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+    <news></news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <banner></banner>
+        <clearlogo></clearlogo>
+        <screenshot></screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.hsk.wizard18.pro" name="[COLOR blue]HSK WIZARD PRO[/COLOR]" version="1.0.0~beta14" provider-name="Loki1979">
+	<requires>
+	<!--py2 compliant-->
+	<!--<import addon="xbmc.python" version="2.25.0"/>-->
+	<!--py3 compliant-->
+	<!--<import addon="xbmc.python" version="3.0.0" targetversion="3.0.0"/>-->
+	<import addon="xbmc.python" version="2.25.0"/>
+	<import addon="script.module.inputstreamhelper" version="0.4.7"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+	<provides>video</provides>
+	</extension>
+	<extension point="xbmc.webinterface"/>
+	<extension point="xbmc.addon.metadata">
+	<summary>[COLOR blue]Created by loki1979[/COLOR]</summary>
+	<description>[COLOR blue]21.06.2020 07:00 PYTHON 2 AND 3[/COLOR]</description>
+	<disclaimer></disclaimer>
+	<language></language>
+	<platform>all</platform>
+	<license></license>
+	<forum></forum>
+	<website></website>
+	<email></email>
+	<source></source>
+	<news></news>
+	<assets>
+		<icon>resources/icon.png</icon>
+		<fanart>resources/fanart.jpg</fanart>
+		<screenshot>resources/screenshot01.jpg</screenshot>
+		<screenshot>resources/screenshot02.jpg</screenshot>
+		<screenshot>resources/screenshot03.jpg</screenshot>
+		<screenshot>resources/screenshot04.jpg</screenshot>
+		<screenshot>resources/screenshot05.jpg</screenshot>
+		<screenshot>resources/screenshot06.jpg</screenshot>
+		<screenshot>resources/screenshot07.jpg</screenshot>
+		<screenshot>resources/screenshot08.jpg</screenshot>
+		<screenshot>resources/screenshot09.jpg</screenshot>
+		<screenshot>resources/screenshot10.jpg</screenshot>
+	</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.video.netflix" name="Netflix" version="1.20.3" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+    <import addon="script.module.addon.signals" version="0.0.3"/>
+    <import addon="script.module.future" version="0.17.1"/>
+    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+    <import addon="script.module.pycryptodome" version="3.4.3"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.python.module" library="packages/mysql-connector-python"/>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="cs_CZ">Netflix</summary>
+    <description lang="cs_CZ">Plugin pro sledování filmů, seriálů online z Netflixu</description>
+    <disclaimer lang="cs_CZ">Použití tohoto doplňku nemusí být ve vaší zemi pobytu legální - před instalací dbejte na vaše zákony.</disclaimer>
+    <summary lang="de_DE">Netflix</summary>
+    <description lang="de_DE">Addon für Netflix VOD-Dienste</description>
+    <disclaimer lang="de_DE">Möglicherweise ist die Verwendung dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation überprüfen.</disclaimer>
+    <summary lang="en_GB">Netflix</summary>
+    <description lang="en_GB">Netflix VOD Services Add-on</description>
+    <disclaimer lang="en_GB">The use of this add-on may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <summary lang="el_GR">Νέτφλιξ</summary>
+    <description lang="el_GR">Πρόσθετο υπηρεσιών κατά παραγγελία του Νέτφλιξ</description>
+    <disclaimer lang="el_GR">Η χρήση αυτού του προσθέτου μπορεί να μην είναι νόμιμη στην χώρα που κατοικείτε - παρακαλώ ελέγξτε τους τοπικούς νόμους πριν την εγκατάσταση.</disclaimer>
+    <summary lang="nl_NL">Netflix</summary>
+    <description lang="nl_NL">Bekijk Netflix films en tvprogramma's in Kodi.</description>
+    <disclaimer lang="nl_NL">Sommige delen van deze add-on zijn mogelijk onwettig in jouw land - raadpleeg de lokale wetgeving alvorens deze add-on te installeren.</disclaimer>
+    <summary lang="ja_JP">Netflix</summary>
+    <description lang="ja_JP">Netflix VOD サービスアドオン</description>
+    <disclaimer lang="ja_JP">一部の国では、このアドオンを使用するのが不法でありますので、設置する前に必ず関連法律を確認してください</disclaimer>
+    <summary lang="ko_KR">Netflix</summary>
+    <description lang="ko_KR">Netflix VOD 서비스애드온</description>
+    <disclaimer lang="ko_KR">일부 국가에서는 이 애드온을 사용하는 것이 불법일 수도 있으니, 설치하기전 관련 법을 확인하기 바랍니다.</disclaimer>
+    <description lang="it_IT">Netflix Add-on servizi VOD</description>
+    <disclaimer lang="it_IT">L'utilizzo di questo add-on potrebbe non essere legale nel vostro paese di residenza - si prega di verificare le leggi in vigore prima dell'installazione.</disclaimer>
+    <summary lang="es_ES">Netflix</summary>
+    <description lang="es_ES">Complemento para los Servicios VOD de Netflix</description>
+    <disclaimer lang="es_ES">El uso de este complemento puede no ser legal en su país de residencia - Por favor, consulte las leyes locales antes de instalarlo.</disclaimer>
+    <summary lang="hu_HU">Netflix</summary>
+    <description lang="hu_HU">Netflix VOD kiegészítő a Kodihoz</description>
+    <disclaimer lang="hu_HU">Előfordulhat, hogy a kiegészítő használata nem törvényes az Ön országában - telepítés előtt tájékozódjon a helyi törvényekről</disclaimer>
+    <summary lang="pt_BR">Netflix</summary>
+    <description lang="pt_BR">Add-on para os serviços VOD do Netflix</description>
+    <disclaimer lang="pt_BR">O uso deste addon pode não ser legal no seu país de residência - por favor, verifique as suas leis locais antes de instalar.</disclaimer>
+    <summary lang="tr_TR">Netflix</summary>
+    <description lang="tr_TR">Netflix VOD Hizmetleri Eklentisi</description>
+    <disclaimer lang="tr_TR">Bu eklentinin bazı bölümleri ikamet ettiğiniz ülkede yasal olmayabilir - lütfen yüklemeden önce yerel yasalarınıza bakın.</disclaimer>
+    <summary lang="ro_RO">Netflix</summary>
+    <description lang="ro_RO">Add-on pentru servicii video la cerere Netflix</description>
+    <disclaimer lang="ro_RO">Utilizarea acestui add-on ar putea fi ilegală în țara în care locuiți - vă rugăm să verificați legile locale înainte de instalare.</disclaimer>
+    <summary lang="sv_SE">Netflix</summary>
+    <description lang="sv_SE">Netflix VOD Service-tillägg</description>
+    <disclaimer lang="sv_SE">Användandet av detta tillägg kanske inte är lagligt i ditt hemland - kontrollera med dina lokala lagar innan du installerar.</disclaimer>
+    <summary lang="zh_CN">Netflix</summary>
+    <description lang="zh_CN">Netflix VOD服务附加组件</description>
+    <disclaimer lang="zh_CN">此附加组件在您的居住国可能不合法-请在安装前与您当地的法律核对。</disclaimer>
+    <summary lang="fr_FR">Netflix</summary>
+    <description lang="fr_FR">Extension Netflix SVoD</description>
+    <disclaimer lang="fr_FR">L'utilisation de cette extension n'est peut-être pas légale dans votre pays de résidence - renseignez-vous avant de l'installer</disclaimer>
+    <summary lang="pl_PL">Netflix</summary>
+    <description lang="pl_PL">Wtyczka dla usług VOD serwisu Netflix</description>
+    <disclaimer lang="pl_PL">Korzystanie z tego dodatku może być niezgodne z prawem w twoim kraju zamieszkania - przed zainstalowaniem zapoznaj się z lokalnymi przepisami.</disclaimer>
+    <summary lang="he_IL">Netflix</summary>
+    <description lang="he_IL">תוסף VOD לשירות של Netflix</description>
+    <disclaimer lang="he_IL">השימוש בתוסף זה עלול להיות לא חוקי במדינת מגוריך - אנא בדוק את החוק ברשות המקומית לפני ההתקנה</disclaimer>
+	<assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+      <screenshot>resources/media/screenshot-01.jpg</screenshot>
+      <screenshot>resources/media/screenshot-02.jpg</screenshot>
+      <screenshot>resources/media/screenshot-03.jpg</screenshot>
+      <screenshot>resources/media/screenshot-04.jpg</screenshot>
+      <screenshot>resources/media/screenshot-05.jpg</screenshot>
+    </assets>
+    <language>en cs de es fr he hr hu it ja ko nl pl pt ro sv tr zh</language>
+    <platform>all</platform>
+    <license>MIT</license>
+    <website>https://www.netflix.com</website>
+    <email></email>
+    <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
+    <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
+    <news>
+v1.12.3 (2021-02-21)
+- Fixed HTTP ReadTimeout/ConnectionError errors
+- Fixed incorrect handling of MSL errors
+    </news>
+  </extension>
+</addon>
+
+<addon id="repository.hsk_forever" name="[COLOR magenta]HSK FOREVER[/COLOR]" version="1.0.10" provider-name="[COLOR magenta]SH Germania | KODIMAN | HSK-DE[/COLOR]">
+    <extension point="xbmc.addon.repository" name="HSK FOREVER REPOSITORY">
+    <info compressed="false">http://195.201.100.38/forever/addons.xml</info>
+    <checksum>http://195.201.100.38/forever/addons.xml.md5</checksum>
+    <datadir zip="true">http://195.201.100.38/forever/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR magenta]HSK FOREVER REPOSITORY[/COLOR]</summary>
+        <description>[COLOR magenta]
+
+Ein besonderer Dank geht an Guido Sasse,
+Loki 1979 und an Kodiman die mir stehts zur Seite standen.
+
+In diesem Sinne  HSK-FOREVER
+
+Kodimans Forum:
+http://www.kodiman.net[/COLOR]</description>
+        <platform>all</platform>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -2359,7 +2599,163 @@ v0.5.0 (2020-06-25)
 			<screenshot>resources/screenshot002.jpg</screenshot>
 			<screenshot>resources/screenshot003.jpg</screenshot>
 			<screenshot>resources/screenshot004.jpg</screenshot>
+			<screenshot>resources/screenshot005.jpg</screenshot>
+			<screenshot>resources/screenshot006.jpg</screenshot>
+			<screenshot>resources/screenshot007.jpg</screenshot>
+			<screenshot>resources/screenshot008.jpg</screenshot>
 		</assets>
+    </extension>
+</addon>
+
+<addon id="repository.kus.allinone" name="[B][COLORdeepskyblue]K.U.S[/COLOR][/B] [COLORwhite]All In One[/COLOR] [COLORdeepskyblue]Repository[/COLOR]" version="3.3" provider-name="[COLORdeepskyblue]K.U.S Team[/COLOR]">
+    <extension point="xbmc.addon.repository" name="[COLORdeepskyblue]K.U.S Addon Repository[/COLOR]">
+    <info compressed="false">http://kodi.my-cydia-ig.de/RepoAddons/addons.xml</info>
+    <checksum>http://kodi.my-cydia-ig.de/RepoAddons/addons.xml.md5</checksum>
+    <datadir zip="true">http://kodi.my-cydia-ig.de/RepoAddons/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLORdeepskyblue]K.U.S-REPOSITORY[/COLOR]</summary>
+        <description>Downloade und installiere Addons von der KODI Unlimited Support-Repository.[CR][CR]Kontakt + Support:[CR][COLORdeepskyblue]https://www.facebook.com/groups/kodiunlimited[/COLOR][CR]Spende:[CR][COLORdeepskyblue]https://www.paypal.me/KodiUnlimited[/COLOR][CR][CR][COLORred]Der Ersteller des Repository, ist nicht der Ersteller der Addons und somit nicht Verantwortlich für dessen Inhalt![/COLOR]</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.sgkodi" name="[B][COLORdeepskyblue]SGK[/COLOR][/B][COLORwhite]ODI REPOSITORY[/COLOR]" version="1.1.5" provider-name="SGK">
+    <extension point="xbmc.addon.repository" name="Kodi Addons + Repos">
+    <info compressed="false">http://sgkodi.de/SGK-Repo/Repo-Daten/addons.xml</info>
+    <checksum>http://sgkodi.de/SGK-Repo/Repo-Daten/addons.xml.md5</checksum>
+    <datadir zip="true">http://sgkodi.de/SGK-Repo/Repo-Daten/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>SGK All in One Repository</summary>
+        <description>Eine Sammlung von KODI-Repositories und Addons.[CR][CR]Kontakt + Support:[CR][COLORdeepskyblue]https://www.facebook.com/groups/kodiunlimited[/COLOR][CR]Spenden - Link:[CR][COLORdeepskyblue]https://www.paypal.me/KodiUnlimited[/COLOR]</description>
+        <platform>all</platform>
+		<assets>
+        <screenshot>resources/screenshot1.png</screenshot>
+        <screenshot>resources/screenshot2.png</screenshot>
+		<screenshot>resources/screenshot3.png</screenshot>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+		</assets>
+    </extension>
+</addon>
+
+<addon id="repository.skinbase.18" name="[COLOR orange]G[/COLOR]UIDO[COLOR orange]S[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Only Skins for 18" version="1.1.20" provider-name="[COLOR orange]GUIDO[/COLOR] | [COLOR skyblue]Kodiman[/COLOR] | [COLOR orange]HSK-DE[/COLOR]">
+	<extension point="xbmc.addon.repository" name="GUIDOS SKINBASE REPO">
+	<dir>
+	<info compressed="false">https://downloads.guidos-skinbase.de/skins18/addons.xml</info>
+	<checksum>https://downloads.guidos-skinbase.de/skins18/addons.xml.md5</checksum>
+	<datadir zip="true">https://downloads.guidos-skinbase.de/skins18/</datadir>
+	</dir>
+	<dir>
+	<info compressed="false">https://downloads.guidos-skinbase.de/skins18.1/addons.xml</info>
+	<checksum>https://downloads.guidos-skinbase.de/skins18.1/addons.xml.md5</checksum>
+	<datadir zip="true">https://downloads.guidos-skinbase.de/skins18.1/</datadir>
+	</dir>
+	<dir>
+	<info compressed="false">https://downloads.guidos-skinbase.de/addons18/addons.xml</info>
+	<checksum>https://downloads.guidos-skinbase.de/addons18/addons.xml.md5</checksum>
+	<datadir zip="true">https://downloads.guidos-skinbase.de/addons18/</datadir>
+	</dir>
 	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>[COLOR orange]G[/COLOR]uido[COLOR orange]s[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Repo</summary>
+<description lang="de_DE">In Guidos SKINBASE findet ihr Skins für die Kodi Versionen von 16 bis 19 aus aller Welt.
+Die Skins sind für die jeweiligen Kodi Versionen farblich markiert. Des weiteren findet ihr auch weitere Repos sowie alle Addons Abhängikeiten in der Repo die für die Skins benötigt werden.
+Die SkinBase wird ständig erweitert und verbessert. Hinzugekommen sind Skins mit Topics Loader , diese sind EXTRA mit Roter schrift versehen und ermöglichen mit einem Skin unzählige Themen oder Hintergrundbilder zu wechseln. Viel Spass wünschen euch Guido und sowie das SKINBASE TEAM.</description>
+		<description lang="en_GB">In Guidos SKINBASE you will find skins for the Kodi versions from 16 to 19 from all over the world.
+The skins are color-coded for the respective Kodi versions. Furthermore, you will also find other repos and all addons dependencies in the repo that are required for the skins.
+The SkinBase is constantly being expanded and improved. Added to this are skins with Topics Loader, these are EXTRA with red letters and allow you to change countless themes or background images with one skin. Guido and the SKINBASE TEAM wish you lots of fun.</description>
+        <platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshot-08.jpg</screenshot>
+			<screenshot>resources/screenshot-09.jpg</screenshot>
+			<screenshot>resources/screenshot-10.jpg</screenshot>
+		</assets>
+        <forum>https://www.facebook.com/groups/716337198478240/</forum>
+        <website>https://www.facebook.com/groups/716337198478240/</website>
+	</extension>
+</addon>
+
+<addon id="repository.wrp-metaplayer" name="WRP-MetaPlayer Repository" version="1.0.5" provider-name="DWH">
+	<extension point="xbmc.addon.repository" name="WRP-MetaPlayer Repository">
+	<info compressed="false">https://raw.github.com/DWH-WFC/repository.wrp-metaplayer/master/addons.xml</info>
+	<checksum>https://raw.github.com/DWH-WFC/repository.wrp-metaplayer/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.github.com/DWH-WFC/repository.wrp-metaplayer/master/zips/</datadir>
+	</extension>
+        <extension point="xbmc.addon.metadata">
+        <summary lang="de">WRP-MetaPlayer Repository</summary>
+        <description lang="de">WRP-MetaPlayer Repository für alle WRP Addons inklusive der Abhängigkeiten</description>
+        <summary lang="en">WRP-MetaPlayer Repository</summary>
+        <description lang="en">WRP-MetaPlayer repository for all WRP addons and your dependencies</description>
+        <platform>all</platform>
+        <forum>https://gitter.im/WRP-Lounge/WRP-Metaplayer</forum>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <banner></banner>
+            <clearlogo></clearlogo>
+            <screenshot></screenshot>
+        </assets>
+   	</extension>
+</addon>
+
+<addon id="script.module.slyguy" name="SlyGuy Shared" provider-name="SlyGuy" version="0.22.2">
+  <requires>
+    <!-- <import addon="xbmc.python" version="2.1.0"/> -->
+    <import addon="repository.slyguy"/>
+  </requires>
+  <!-- <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension> -->
+  <extension point="xbmc.python.module" library="resources/modules" />
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en"></description>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news>Brand new Proxy Quality control method</news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="slyguy.disney.plus" name="Disney+" provider-name="Slyguy" version="0.6.1">
+  <requires>
+    <import addon="script.module.slyguy"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">Disney+ is the exclusive home for your favorite movies and TV shows from Disney, Pixar, Marvel, Star Wars, and National Geographic.
+
+Subscription required.</description>
+    <description lang="it">Disney+ è la casa esclusiva per i tuoi film e programmi TV preferiti di Disney, Pixar, Marvel, Star Wars e National Geographic.
+
+Abbonamento richiesto.</description>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news>Add Hubs folder</news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
 </addon>
 </addons>
